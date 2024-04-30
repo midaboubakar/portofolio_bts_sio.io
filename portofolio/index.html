@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My portofolio</title>
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">ELLA MIDJIYAWA</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">project</a></li>
+                <li><a href="#veille veille technologique">veille technologique</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">ELLA MIDJIYAWA</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#projects"onclick="toggleMenu()">project</a></li>
+                <li><a href="#veille veille technologique" onclick="toggleMenu()">veille technologique</a></li>
+                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./asset/momo.jpg" alt="profile  picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello i'm</p>
+            <h1 class="title">Ella Midjiyawa</h1>
+            <p class="section__text__p2">Etudiant en Informatique </p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./asset/recherche alt.pdf')">download cv</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">contact info</button>
+            </div>
+            <div id="social-container">
+                <img src="./asset/linkedin.png"  alt="my linkedin" class="icon" onclick="location.href='https://www.linkedin.com/'">
+                <img src="./asset/github.png"  alt="my github profile" class="icon" onclick="location.href='https://www.github.com/'">
+
+            </div>
+        </div>
+    </section>
+    <!-- section about-->
+    <section id="about">
+        <p class="section__text__p1">Get To know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./asset/moel.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container"> 
+                        <img src="./asset/experience.png" alt="experience icon "
+                        class="icon">
+                        <h3>experience</h3>
+                        <p>Developpeur wordpress <br>Ecom Standard Company</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./asset/education.png" alt="education icon "
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>2eme année bachelor  <br>Estiam Lyon 7 </p>
+                        <br>
+                        <p>2eme annee BTS SIO SLAM <br> H3Hitema issy-les-moulineaux 92</p>
+                        <br>
+                        <p>1ere Annee BTS SIO SLAM <br> Estya University Paris 75001</p>
+                        <br>
+                        <p>BAc General</p>
+                    </div>
+                </div>
+                
+                 <div class="text-container">
+                    <p>
+                        Bonjour ! Je suis Ella Midjiyawa, passionnée de données et aspirante analyste de données, âgée de 21 ans.
+                         Actuellement, je suis en deuxième année de bachelor en informatique à ESTIAM Lyon.
+                           Mon objectif principal est de devenir data analyst.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./asset/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <!-- experience-->
+    <section id="experience">
+        <p class="section__text__p1">Explore MY</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Front-end </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>experienced</p>
+                            </div>
+                        </article>
+                        
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>BASIC</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MAterial UI</h3>
+                                <p>BAsic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Back-end</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JAVA</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>node js</h3>
+                                <p>basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>python</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Framework</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Symfony</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>django</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>react js</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Versionning Code</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+            <img src="./asset/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+        </div>
+    </section>
+
+    <!-- project design -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">projects</h1>
+        <div class="experience-details-conatiner">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-1.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 1</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-2.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 2</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 3</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 4</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 5</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 6</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>       
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 7</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>       
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 8</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>       
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-3.png" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project 9</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>       
+        </div>
+        </div>
+        <img src="./asset/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <!-- veille technologique design -->
+    <section class="card">
+        <div>
+            <h1>Ma veille technologique</h1>
+      
+        <h2>I – Qu’est-ce qu’un jeu vidéo ?</h2>
+      
+        <p>Un jeu vidéo est un dispositif électronique nécessitant une interaction avec l’utilisateur depuis une interface homme-machine afin de produire un retour visuel sur une sortie vidéo. L’utilisateur a, à sa disposition, un ensemble de périphériques d’entrées (manette, clavier/souris, tapis de danse ...) et de sorties (écran, sortie audio, ‘casque’ de réalité virtuelle, ...) permettant d’agir sur le système vidéo-ludique et de voir les conséquences de ses actes sur l’environnement virtuel.</p>
+      
+        <p>L’industrie du jeu vidéo se développe sur plusieurs plateformes, les consoles, les ordinateurs mais aussi les smartphones ou tablettes, proposant un large panel de choix et de façons de jouer.</p>
+      
+        <ul>
+          <li>Les consoles de jeu vidéo sont des systèmes informatiques spécialisés. C’est-à-dire qu’ils répondent uniquement par une interface graphique dédiée au monde du jeu même si de plus en plus de modules sont disponibles sur les consoles comme l’accès à internet, le lecteur de DVD, ...</li>
+          <li>Les ordinateurs sont des plateformes bien plus complètes. Ces systèmes sont facilement améliorables puisque les composants (processeur, carte graphique) peuvent être adaptés à l’utilisation d’un jeu nécessitant des compétences matérielles plus importantes. Il est important de faire coïncider la puissance demandée par le jeu avec la puissance fournie par l’ordinateur afin d’améliorer l’expérience de jeu.</li>
+        </ul>
+      
+        <p>On utilise depuis quelques années les mouvements du joueur pour interagir avec le jeu comme par exemple la console Wii de Nintendo, le Kinect de Microsoft d’interactions. Dernièrement, les dispositifs de sorties vidéos ont évolué. Outre les écrans d’ordinateurs et les télévisions pour les consoles, des caméras intégrées aux consoles de jeux vidéo dernière génération permettent de simuler des réalités virtuelles faisant interagir l’environnement réel du joueur et le jeu vidéo en lui-même (Oculus Rift, ...)</p>
+      
+        <h2>II – Réalisation d’un projet de type jeu vidéo</h2>
+      
+        <p>La gestion d’un projet jeu vidéo est très similaire à la gestion d’un projet informatique. Le chef de projet définit les objectifs du projet afin d’arriver à un produit final complet. Les diagrammes de répartition des tâches (comme Gantt) permettent de cibler correctement les tâches nécessaires à la bonne réalisation du projet, les étapes d’études techniques et détaillées, la conception, la mise en production, restent, par ailleurs, les étapes indispensables d’un tel projet. L’essentiel de la création d’un projet comme celui-ci se retrouve dans la coordination entre les différentes parties (développeur, scénariste, infographiste, chef de projet, ...)</p>
+      
+        <p>Les métiers du jeu vidéo correspondent avec les métiers nécessaires au montage d’un projet informatique :</p>
+      
+        <ul>
+          <li>Les producteurs sont en quelque sorte les maîtres d’ouvrage de chaque projet.</li>
+          <li>Les concepteurs de jeux, infographistes et programmeurs, sont chargés de développer le jeu de A à Z.</li>
+          <li>Comme dans un projet, il existe une équipe de testeurs plus ou moins importante en fonction de l’ampleur du projet.</li>
+        </ul>
+      
+        <h2>III – L’évolution des jeux vidéos et leurs différents domaines</h2>
+      
+        <p>08/17 – Un jeu vidéo d’origine allemande développé avec des chercheurs, est utilisé pour tenter de dépister la maladie d’Alzheimer. Téléchargeable par tous sur smartphone, les données recueillies permettent de mieux comprendre ce qu’il se passe dans le cerveau. <a href="#">Lien de l’article</a></p>
+      
+        <!-- Ajoutez les autres entrées de votre veille technologique ici -->
+        
+        <p>10/17 – Le jeu d’Ubisoft, Assassin’s Creed Origine, développe une fonctionnalité unique, « celle du Discovery Tour by Assassin’s Creed : Ancient Egypt, sorte de découverte culturelle dans l’Égypte antique. » <a href="#">Lien de l’article</a></p>
+      
+        <p>En parallèle, le studio, en association avec Google, a décidé de développer une traduction en ligne de hiéroglyphes à l’aide de learning-machine qui est une méthode informatique basée sur un apprentissage automatique. <a href="#">Lien du site</a></p>
+      
+        <!-- Ajoutez les autres entrées de votre veille technologique ici -->
+      
+        <h2>Conclusion :</h2>
+      
+        <p>Au cours de cette veille, je me suis rendue compte que les jeux n’étaient plus de simples logiciels destinés à l’amusement. De plus en plus populaires, les entreprises s’en servent pour divers domaines, que ce soit la médecine, les recherches scientifiques, l’histoire / archéologie, la conception des IA, l’amélioration des futures voitures autonomes. Les jeux vidéo sont devenus un outil de travail et de réflexion, permettant de regrouper des centaines de milliers de données exploitables dans un but grâce aux grands nombres de joueurs. Ils ne sont plus ignorés par le monde du travail et leur utilisation peut être bénéfique contrairement aux premières idées reçues à leur sujet.</p>
+      
+        </div>
+        <img src="./asset/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#veille veille technologique'">
+
+    </section>
+
+        <br><br><br>
+
+
+    <!-- contact design-->
+    <section id="contact-section">
+        <div class="container">
+          <h2>Contactez-nous</h2>
+          <form action="#" method="post" id="contactForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom.." required>
+      
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email.." required>
+      
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Votre message.." required></textarea>
+      
+            <input type="submit" value="Envoyer" id="submitButton">
+          </form>
+        </div>
+      </section>
+
+    <!-- footer section-->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#projects">project</a></li>
+                    <li><a href="#veille veille technologique">veille technologique</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &copy; 2024 ella Midjiyawa. All Right Reserved .</p>
+    </footer>
+    <!-- script section-->
+    <script src="script.js"></script>
+</body>
+</html>
